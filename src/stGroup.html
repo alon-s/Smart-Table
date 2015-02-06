@@ -1,0 +1,10 @@
+<tbody ng-init="key = getKey(group)" ng-repeat="group in groups">
+<tr ng-click="show = !show">
+    <td colspan="columns.length">
+
+    </td>
+</tr>
+<tr ng-show="show" ng-repeat="row in group[key]">
+    <td ng-repeat="column in columns">{{row[column}}</td>
+</tr>
+</tbody>
